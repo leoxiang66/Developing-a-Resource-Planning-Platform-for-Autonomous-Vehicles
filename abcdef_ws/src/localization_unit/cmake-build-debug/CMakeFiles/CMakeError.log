@@ -1,25 +1,25 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_dd31c/fast && /usr/bin/make  -f CMakeFiles/cmTC_dd31c.dir/build.make CMakeFiles/cmTC_dd31c.dir/build
-make[1]: Entering directory '/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_dd31c.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_dd31c.dir/src.c.o   -c /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_dd31c
-/home/xys/CLion-2020.2.5/clion-2020.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd31c.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_dd31c.dir/src.c.o  -o cmTC_dd31c 
-CMakeFiles/cmTC_dd31c.dir/src.c.o: In function `main':
+Run Build Command(s):/usr/bin/make cmTC_c6a24/fast && /usr/bin/make  -f CMakeFiles/cmTC_c6a24.dir/build.make CMakeFiles/cmTC_c6a24.dir/build
+make[1]: Entering directory '/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6a24.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c6a24.dir/src.c.o   -c /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c6a24
+/home/xys/CLion-2020.2.5/clion-2020.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6a24.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_c6a24.dir/src.c.o  -o cmTC_c6a24 
+CMakeFiles/cmTC_c6a24.dir/src.c.o: In function `main':
 src.c:(.text+0x3e): undefined reference to `pthread_create'
 src.c:(.text+0x4a): undefined reference to `pthread_detach'
 src.c:(.text+0x56): undefined reference to `pthread_cancel'
 src.c:(.text+0x67): undefined reference to `pthread_join'
 src.c:(.text+0x7b): undefined reference to `pthread_atfork'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_dd31c.dir/build.make:106: recipe for target 'cmTC_dd31c' failed
-make[1]: *** [cmTC_dd31c] Error 1
-make[1]: Leaving directory '/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:141: recipe for target 'cmTC_dd31c/fast' failed
-make: *** [cmTC_dd31c/fast] Error 2
+CMakeFiles/cmTC_c6a24.dir/build.make:106: recipe for target 'cmTC_c6a24' failed
+make[1]: *** [cmTC_c6a24] Error 1
+make[1]: Leaving directory '/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:141: recipe for target 'cmTC_c6a24/fast' failed
+make: *** [cmTC_c6a24/fast] Error 2
 
 
 Source file was:
@@ -44,22 +44,22 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_e8f71/fast && /usr/bin/make  -f CMakeFiles/cmTC_e8f71.dir/build.make CMakeFiles/cmTC_e8f71.dir/build
-make[1]: Entering directory '/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e8f71.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e8f71.dir/CheckFunctionExists.c.o   -c /home/xys/CLion-2020.2.5/clion-2020.2.5/bin/cmake/linux/share/cmake-3.17/Modules/CheckFunctionExists.c
-Linking C executable cmTC_e8f71
-/home/xys/CLion-2020.2.5/clion-2020.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8f71.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_e8f71.dir/CheckFunctionExists.c.o  -o cmTC_e8f71  -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_347bd/fast && /usr/bin/make  -f CMakeFiles/cmTC_347bd.dir/build.make CMakeFiles/cmTC_347bd.dir/build
+make[1]: Entering directory '/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_347bd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_347bd.dir/CheckFunctionExists.c.o   -c /home/xys/CLion-2020.2.5/clion-2020.2.5/bin/cmake/linux/share/cmake-3.17/Modules/CheckFunctionExists.c
+Linking C executable cmTC_347bd
+/home/xys/CLion-2020.2.5/clion-2020.2.5/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_347bd.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_347bd.dir/CheckFunctionExists.c.o  -o cmTC_347bd  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_e8f71.dir/build.make:106: recipe for target 'cmTC_e8f71' failed
-make[1]: *** [cmTC_e8f71] Error 1
-make[1]: Leaving directory '/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:141: recipe for target 'cmTC_e8f71/fast' failed
-make: *** [cmTC_e8f71/fast] Error 2
+CMakeFiles/cmTC_347bd.dir/build.make:106: recipe for target 'cmTC_347bd' failed
+make[1]: *** [cmTC_347bd] Error 1
+make[1]: Leaving directory '/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:141: recipe for target 'cmTC_347bd/fast' failed
+make: *** [cmTC_347bd/fast] Error 2
 
 
 

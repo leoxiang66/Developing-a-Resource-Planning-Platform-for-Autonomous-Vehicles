@@ -5,7 +5,5 @@
 #include "tf2_ros/buffer.h"
 
 int main(){
-    rclcpp::Clock::SharedPtr clock;
-    tf2_ros::Buffer buffer = tf2_ros::Buffer(clock,tf2::Duration(tf2::BUFFER_CORE_DEFAULT_CACHE_TIME));
-
+    
 }

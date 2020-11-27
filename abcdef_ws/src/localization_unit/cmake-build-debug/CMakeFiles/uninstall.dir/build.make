@@ -63,10 +63,10 @@ RM = /home/xys/CLion-2020.2.5/clion-2020.2.5/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit
+CMAKE_SOURCE_DIR = /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug
+CMAKE_BINARY_DIR = /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug
 
 # Utility rule file for uninstall.
 
@@ -74,7 +74,7 @@ CMAKE_BINARY_DIR = /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/home/xys/CLion-2020.2.5/clion-2020.2.5/bin/cmake/linux/bin/cmake -P /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/home/xys/CLion-2020.2.5/clion-2020.2.5/bin/cmake/linux/bin/cmake -P /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -91,6 +91,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

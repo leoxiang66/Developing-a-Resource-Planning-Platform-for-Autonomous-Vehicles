@@ -1,4 +1,4 @@
-# Install script for directory: /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit
+# Install script for directory: /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/localization_unit/gnss"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/localization_unit" TYPE EXECUTABLE FILES "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/gnss")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/localization_unit" TYPE EXECUTABLE FILES "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/gnss")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/localization_unit/gnss" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/localization_unit/gnss")
     file(RPATH_CHANGE
@@ -64,7 +64,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/localization_unit/test2"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/localization_unit" TYPE EXECUTABLE FILES "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/test2")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/localization_unit" TYPE EXECUTABLE FILES "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/test2")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/localization_unit/test2" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/localization_unit/test2")
     file(RPATH_CHANGE
@@ -78,11 +78,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/localization_unit")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/localization_unit")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/localization_unit")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/localization_unit")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -94,30 +94,30 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/localization_unit" TYPE FILE FILES "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/localization_unit" TYPE FILE FILES "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/localization_unit" TYPE FILE FILES "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/localization_unit" TYPE FILE FILES "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/localization_unit" TYPE FILE FILES "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/localization_unit" TYPE FILE FILES "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_index/share/ament_index/resource_index/packages/localization_unit")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_index/share/ament_index/resource_index/packages/localization_unit")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/localization_unit/cmake" TYPE FILE FILES
-    "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_core/localization_unitConfig.cmake"
-    "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_core/localization_unitConfig-version.cmake"
+    "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_core/localization_unitConfig.cmake"
+    "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/ament_cmake_core/localization_unitConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/localization_unit" TYPE FILE FILES "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/localization_unit" TYPE FILE FILES "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -128,5 +128,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

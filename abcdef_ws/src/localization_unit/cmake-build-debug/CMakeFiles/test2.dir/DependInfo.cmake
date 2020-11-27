@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/src/test.cpp" "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/test2.dir/src/test.cpp.o"
+  "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/src/test.cpp" "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles/test2.dir/src/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

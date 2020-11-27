@@ -29,7 +29,7 @@ function(ament_cmake_uninstall_target_remove_empty_directories path)
 endfunction()
 
 # uninstall files installed using the standard install() function
-set(install_manifest "/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/install_manifest.txt")
+set(install_manifest "/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/install_manifest.txt")
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find install manifest: ${install_manifest}")
 endif()

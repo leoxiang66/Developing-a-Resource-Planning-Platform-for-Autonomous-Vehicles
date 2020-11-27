@@ -64,10 +64,10 @@ RM = /home/xys/CLion-2020.2.5/clion-2020.2.5/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit
+CMAKE_SOURCE_DIR = /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug
+CMAKE_BINARY_DIR = /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -97,14 +97,14 @@ clean: CMakeFiles/test2.dir/clean
 CMakeFiles/gnss.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gnss.dir/build.make CMakeFiles/gnss.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gnss.dir/build.make CMakeFiles/gnss.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target gnss"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target gnss"
 .PHONY : CMakeFiles/gnss.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gnss.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gnss.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/gnss.dir/rule
 
 # Convenience name for target.
@@ -124,14 +124,14 @@ CMakeFiles/gnss.dir/clean:
 CMakeFiles/uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -151,14 +151,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/test2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target test2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target test2"
 .PHONY : CMakeFiles/test2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/git/drppad-2021-group_a/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/git/pratical-course-2020/abcdef_ws/src/localization_unit/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/test2.dir/rule
 
 # Convenience name for target.
