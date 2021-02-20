@@ -1,0 +1,7 @@
+
+# Parameters to manual roll and pitch calibration
+main_param:
+    bool_param: True 
+    string_param: 'num_sei' 
+    
+    

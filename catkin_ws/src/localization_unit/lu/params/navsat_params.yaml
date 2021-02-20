@@ -1,0 +1,11 @@
+navsat_transform:
+  frequency: 30
+  delay: 3.0
+  magnetic_declination_radians: 0.2296 #Calculated from the inititial GPS reading 
+  yaw_offset: 1.57080                  #Indicates the imu shows 0 when heading east
+  zero_altitude: true
+  broadcast_cartesian_transform: true
+  publish_filtered_gps: true
+  use_odometry_yaw: false
+  wait_for_datum: false
+

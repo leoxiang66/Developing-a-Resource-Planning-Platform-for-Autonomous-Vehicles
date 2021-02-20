@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<launch>
+
+<!--Broadcast static tranform from the sensor frames to the base frame-->
+
+<node pkg="tf" type="static_transform_publisher" name="base_to_imu_broadcaster" args="0 0 0 0 0 0 base_link imu 10" />
+<node pkg="tf" type="static_transform_publisher" name="base_to_gps_broadcaster" args="0 0 0 0 0 0 base_link gps 10" />
+
+<!--Convert nmea sentence to gps fix data -->
+
+<node pkg="nmea_navsat_driver" type="nmea_topic_driver" name="nmea_to_navsatfix" clear_params="true" output="log">
+  </node>
+  
+ <!--load ekf and navsat transform parameters -->
+  
+ <rosparam command="load" file="$(find lu)/params/ekf_param.yaml" />
+ <rosparam command="load" file="$(find lu)/params/navsat_params.yaml" />
+ 
+ <!--ekf localiation node -->
+   
+<node pkg="robot_localization" type="ekf_localization_node" name="ekf_se_odom" clear_params="true">
+      <remap from="odometry/filtered" to="odometry/filtered_odom"/>
+  </node>
+  
+ <!--Navsat transform node-->
+  
+    <node pkg="robot_localization" type="navsat_transform_node" name="navsat_transform" clear_params="true" output="screen">
+      <remap from="odometry/filtered" to="odometry/filtered_odom"/>
+      <remap from="gps/fix" to="/fix"/>
+      <remap from="imu/data" to="/imu_raw"/>
+  </node>
+  
+ </launch>
+

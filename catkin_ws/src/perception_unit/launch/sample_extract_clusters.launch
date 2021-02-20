@@ -1,0 +1,64 @@
+<launch>
+
+  <arg name="gui" default="true" />
+
+  <!-- use voxel_grid for small cpu load in filtering -->
+  <!-- <include file="$(find perception_unit)/launch/sample_voxel_grid.launch">
+    <arg name="gui" value="true" />
+    <arg name="test" value="false" />
+    <arg name="leaf_size" value="0.05" />
+  </include>
+ -->
+
+  <node name="voxel_grid"
+        pkg="nodelet" type="nodelet"
+        args="standalone pcl/VoxelGrid">
+    <remap from="~input" to="points_fused" />
+    <rosparam subst_value="true">
+      filter_field_name: x
+      filter_limit_min: 0.01
+      filter_limit_max: 30
+      filter_limit_negative: False
+      leaf_size: 0.05
+    </rosparam>
+  </node>
+
+  <node name="extract_clusters"
+        pkg="nodelet" type="nodelet"
+        args="standalone pcl/EuclideanClusterExtraction">
+    <remap from="~input" to="voxel_grid/output" />
+    <rosparam>
+      cluster_tolerance: 0.05
+      spatial_locator: 1  # FLANN
+    </rosparam>
+  </node>
+
+  <node name="convex_hull"
+        pkg="nodelet" type="nodelet"
+        args="standalone pcl/ConvexHull2D">
+    <remap from="~input" to="voxel_grid/output" />
+    <rosparam>
+    </rosparam>
+  </node>
+
+  <test test-name="test_extract_clusters"
+    name="test_extract_clusters"
+    pkg="rostest" type="hztest">
+    <rosparam>
+      topic: /extract_clusters/output
+      hz: 3000
+      hzerror: 2400
+      test_duration: 5.0
+    </rosparam>
+  </test>
+
+  <!-- TODO(wkentaro): Add sample visualization -->
+<!--   <group if="$(arg gui)">
+    <node name="rviz"
+          pkg="rviz" type="rviz"
+          args="-d $(find pcl_ros)/samples/pcl_ros/segmentation/config/extract_clusters.rviz">
+    </node>
+  </group> -->
+ 
+
+</launch>

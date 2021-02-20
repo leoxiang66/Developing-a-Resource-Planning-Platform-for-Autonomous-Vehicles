@@ -1,0 +1,10 @@
+<launch>
+    
+  <include file="$(find perception_unit)/launch/voxel_grid_filter.launch" />
+  <include file="$(find lu)/launch/lu_unit.launch" />
+  <include file="$(find resource_unit)/launch/resource_monitor.launch" />
+  <!-- </include> -->
+  
+    <!-- <rosparam command="load" file="$(find pkg)/config/yaml_file.yaml" />       -->
+
+</launch>

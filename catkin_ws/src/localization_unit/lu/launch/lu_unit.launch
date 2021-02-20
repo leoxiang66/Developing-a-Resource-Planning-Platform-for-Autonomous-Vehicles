@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<launch>
+
+<!--App1-->
+
+<include file="$(find lu)/launch/ekf.launch" />
+
+<!--App2-->
+
+<include file="$(find lu)/launch/rf2o.launch" />
+
+<!--Lu_unit node-->
+<node pkg="lu" name="lu_unit" type="lu_unit.py" output="screen"/>
+
+
+ </launch>
+

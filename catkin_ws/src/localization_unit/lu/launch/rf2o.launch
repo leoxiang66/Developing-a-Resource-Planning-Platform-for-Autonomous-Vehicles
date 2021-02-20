@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <!-- Create a manager becuase nodelets wont launch without one-->
+    <node pkg="nodelet" type="nodelet" name="pointcloud_to_laserscan_manager" output="screen" respawn="true" args="manager"/>
+
+    <!-- push pointcloud_to_laserscan nodelet into the dummny manager above-->
+    <node pkg="nodelet" type="nodelet" name="pointcloud_to_laserscan_worker" args="load pointcloud_to_laserscan/pointcloud_to_laserscan_nodelet pointcloud_to_laserscan_manager">
+
+        <remap from="cloud_in" to="/points_raw"/> #Make the node subscribes to /points_raw instead of /cloud_in
+        <rosparam>
+            target_frame: velodyne 
+            transform_tolerance: 0.01
+            min_height: 0.0
+            max_height: 1.0
+
+            angle_min: -3.14 # -M_PI
+            angle_max: 3.14 # M_PI
+            angle_increment: 0.0087 # M_PI/360.0
+            scsan_time: 0.3333
+            range_min: 0.45
+            range_max: 10.0
+            use_inf: true
+
+            # Concurrency level, affects number of pointclouds queued for processing, thread number governed by nodelet manager
+            # 0 : Detect number of cores
+            # 1 : Single threaded
+            # 2->inf : Parallelism level
+            concurrency_level: 0
+        </rosparam>
+   </node>
+   
+ <!--RF2O node-->
+ 
+ <node pkg="rf2o_laser_odometry" type="rf2o_laser_odometry_node" name="rf2o_laser_odometry" output="screen">
+    <param name="laser_scan_topic" value="/scan"/>        # topic where the lidar scans are being published
+    <param name="odom_topic" value="/odom_rf2o" />              # topic where tu publish the odometry estimations
+    <param name="publish_tf" value="true" />                   # wheter or not to publish the tf::transform (base->odom)
+    <param name="base_frame_id" value="base_link"/>            # frame_id (tf) of the mobile robot base. A tf transform from the laser_frame to the base_frame is mandatory
+    <param name="odom_frame_id" value="mobility" />                # frame_id (tf) to publish the odometry estimations   
+    <param name="init_pose_from_topic" value="" /> # (Odom topic) Leave empty to start at point (0,0)
+    <param name="freq" value="6.0"/>                            # Execution frequency.
+    <param name="verbose" value="true" />                       # verbose
+  </node>
+  
+  
+  
+</launch>

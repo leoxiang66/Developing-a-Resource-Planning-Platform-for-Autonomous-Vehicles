@@ -1,0 +1,19 @@
+<launch>
+
+ <!-- Spawn a filter to try to remove the ground using the height level -->
+  <node name="voxel_filter_z"
+        pkg="nodelet" type="nodelet"
+        args="standalone pcl/VoxelGrid">
+    <remap from="~input" to="points_raw" />
+    <rosparam subst_value="true">
+      filter_field_name: z
+      filter_limit_min: -1.5
+      filter_limit_max: 30
+      filter_limit_negative: False
+      leaf_size: 0.05
+    </rosparam>
+  </node>
+
+  <node pkg="perception_unit" type="obj_detection_node" name="obj_detection_node" output = 'screen'  />
+
+</launch>
