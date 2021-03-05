@@ -9,79 +9,92 @@ This project is done by Tao Xiang and Mehdi Kallel. Tao has done kalmen filter i
 First of all, install the Autoware AI following the steps in https://autoware.readthedocs.io/en/feature-documentation_rtd/UsersGuide/Installation.html#spec-recommendation
 Then, follow the steps below to compile and run the packages.
 
-- Run the LGVSL Simulator. Inside its dir run:
-	
-```
-./simulator
-```
+1. **simulator**
+    ```
+    cd lgsvl.../lgsvl...
+    ./simulator
+    ```
 
-- Choose Borregas Ave that uses Autoware. And play the simulation.
+  simulations > 2nd one > play > play
 
-- Run the Autoware 1.14.0 container and enter into it:
-	cd docker/generic
-	
-```
-./run.sh -t 1.14.0
-```
+2. **runtime manager**  
+    ```
+    cd docker/generic
+    ./run.sh
+    cd shared_dir/project-gitlab/pu_ws
+    bash script.sh
+    source devel/setup.bash
+    catkin_make
+    roslaunch runtime_manager runtime_manager.launch
+    ```
+    `Ref`: autoware/shared_dir/autoware-data/BorregasAve/my_launch/my_xxx.launch
+    then load
+3. **object detection**
+    ```
+    cd docker/generic
+    ./run.sh
+    cd shared_dir/project-gitlab/pu_ws
+    bash script.sh
+    source devel/setup.bash
+    catkin_make
+    roslaunch perception_unit voxel_grid_filter.launch
+    ```
+    
+    in `runtime manager`: Computing > lidar_euclidean_cluster_detect > app > voxel_filter_z/output 
+    - clustering distance: 2.25
+    - clip_min_height: -1.5
+    - remove_points_upto: 2.15
+    
+    check `lidar_euclidean_cluster_detect` and `lidar_shape_estimation`
+    
+    sensing > calibration_publisher>Ref: autoware/shared_dir/autoware-data/BorregasAve/data/calibration/camera_lidar_3d/pirus/2nd one > Ok 
+    
+    
+    
+4. **object classification**
+    ```
+    cd docker/generic
+    ./run.sh
+    cd shared_dir/project-gitlab/pu_ws
+    bash script.sh
+    source devel/setup.bash
+    catkin_make
+    rosrun perception_unit obj_detection_node
+    ```
+    
+5. **localization**
+    ```
+    cd docker/generic
+    ./run.sh
+    cd shared_dir/project-gitlab/catkin_ws
+    bash script_all.sh
+    ```
+    `Rviz` > 2D estimation > ... > fixed frames: base_link
+    
+    ```
+    source devel/setup.bash
+    catkin_make
+    roslaunch lu lu_unit.launch
+    ```
 
-- Run the runtime manager
-	
-```
-roslaunch runtime_manager runtime_manager.launch
-```
-
-- Set the simulation
-	A few terminals will open, as well as a GUI for the runtime manager. In the runtime manager, click on the 'Quick Start' tab and load the following launch files from `~/shared_dir/autoware-data/BorregasAve/` by clicking "Ref" to the right of each text box.
-	
-- Set the lidar calibration in the Sensing tab. Click in Calibration Publisher and copy-paste the follwoing path to the calibrration file in the textbox and click OK
-	/home/autoware/shared_dir/autoware-data/BorregasAve/data/calibration/camera_lidar_3d/prius/camera_lidar_sim_sf.yaml
-
-- The vehicle may be mis-localized as the initial pose is important for NDT matching. To fix this, click "2D Pose Estimate" in Rviz, then click an approximate position for the vehicle on the map and drag in the direction it is facing before releasing the mouse button.
-
-- Go to the Computing tab in runtime manager and click in the app link for lidar_euclidian_cluster_detect and change the input topic for
-	voxel_filter_z/output and set the parameters like the following: 
-		- clustering distance: 2.25
-		- clip_min_height: -1.5
-		- remove_points_upto: 2.15
-
-- And run the nodes lidar_euclidian_cluster_detect and lidar_shape_estimation by clicking on their respective boxes
-
-- Inside the docker install the python3-rospkg using pip
-```	
-pip3 install rospkg
-```
-
-- Update the apt repos
-```
-sudo apt update
-```
-
-- Install the ros dependecies using apt
-```   
-sudo apt install -y python-matplotlib python-numpy ros-melodic-pcl-ros ros-melodic-image-proc ros-melodic-depth-image-proc ros-melodic-image-transport
-```
-
-- Go to the catkin_ws dir
-```
-cd shared_dir/catkin_ws
-```
-- Run the dependencies script to install the remaining dependencies
-```  
-bash script_all.sh
-```
-- Compile the workspace
-```
-catkin_make
-```
-- Setup the evironment
-```
-source devel/setup.bash
-```
-- Run all packages
-Using the `run.bash` script will bring up all nodes for all units and run them.
-```
-bash run.bash
-```
+6. **resource planner**
+    ```
+    cd docker/generic
+    ./run.sh
+    cd shared_dir/project-gitlab/pu_ws/
+    bash script.sh
+    ```
+    
+    in the `simulator`: Enviroment > traffic + pedestrains
+    
+    ```
+    source devel/setup.bash
+    catkin_make
+    roslaunch resource_unit resource_monitor.launch
+    ```
+    
+    frequency: how often a msg is published
+    latency: how long it takes for the msg to arrive at the latency node
 
 # Demo
 
